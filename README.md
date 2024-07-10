@@ -13,7 +13,7 @@ Get container file:
 If you have access to the console and don't want to write the result into a file:  
 `docker run --rm -e NUM_ELEMENTS=<element count> -v bogosort-container`
   
-If you don't have access to the console and want to write the result into a file:
+If you don't have access to the console and want to write the result into a file:  
 `docker run --rm -e NUM_ELEMENTS=<element count> -e SAVE_OUTPUT=true -v <output directory>:/output bogosort-container`.  
 If you get a permission denied exception, you need to replace the output directory with `<output directory>:/output:z`.
 
